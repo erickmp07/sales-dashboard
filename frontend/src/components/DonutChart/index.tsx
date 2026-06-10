@@ -1,8 +1,9 @@
+import { ApexResponsive } from "apexcharts";
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 
 function DonutChart() {
-    const [state, _] = React.useState({
+    const [state,] = React.useState({
         series: [477138, 499928, 444867, 220426, 473088],
         options: {
             chart: {
@@ -27,7 +28,7 @@ function DonutChart() {
                             position: "bottom",
                         },
                     },
-                } as any,
+                } as ApexResponsive,
             ],
         },
     });

@@ -15,15 +15,6 @@ function Footer() {
                 <p className="text-light">
                     <small>
                         <strong>React + Spring Boot</strong>
-                        <br />
-                        Evento promovido pela escola DevSuperior:{" "}
-                        <a
-                            href="https://instagram.com/devsuperior.ig"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            @devsuperior.ig
-                        </a>
                     </small>
                 </p>
             </div>

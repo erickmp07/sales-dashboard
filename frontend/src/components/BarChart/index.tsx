@@ -2,7 +2,7 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 
 function BarChart() {
-    const [state, _] = React.useState({
+    const [state,] = React.useState({
         series: [
             {
                 name: "% Conversion",
