@@ -3,7 +3,6 @@ package com.springboot.salesdashboard.services;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.springboot.salesdashboard.dto.SellerDTO;
@@ -12,8 +11,11 @@ import com.springboot.salesdashboard.repositories.SellerRepository;
 @Service
 public class SellerService {
 
-    @Autowired
-    private SellerRepository repository;
+    private final SellerRepository repository;
+
+    public SellerService(SellerRepository repository) {
+        this.repository = repository;
+    }
 
     public List<SellerDTO> findAll() {
         var result = repository.findAll();
